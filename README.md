@@ -22,4 +22,4 @@ pip install -r ../requirements.txt
 
 ***Build the images and the containers***
 
-docker compose build
+docker compose build && docker compose up -d
