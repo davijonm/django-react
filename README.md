@@ -23,7 +23,15 @@ yarn build
 
 ## For dockerized installation
 
-***Create the environment variables in a file .env***
+***In the frontend directory, use the following commands to install the dependencies***
+
+yarn install
+
+***The command bellow will create the folder build and copy it to the backend directory***
+
+yarn build
+
+***Create the environment variables in a file .env on the root directory***
 
 ***Build the images and the containers***
 
