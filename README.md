@@ -14,7 +14,12 @@ source venv/bin/activate
 
 ***Install the dependencies that django needs***
 
-pip install -r ../requirements.txt 
+pip install -r ../requirements.txt
+
+***In the frontend directory, use the following commands to install the dependencies***
+
+yarn install
+yarn build
 
 ## For dockerized installation
 
