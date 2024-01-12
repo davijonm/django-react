@@ -12,6 +12,8 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - mynetwork
 
   api:
     build:
@@ -25,6 +27,10 @@ services:
       - .env
     volumes:
     - ./backend:/mnt/code
+    networks:
+      - mynetwork
 
 volumes:
   postgres_data:
+networks:
+  mynetwork: {}
