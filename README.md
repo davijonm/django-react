@@ -40,12 +40,12 @@ yarn build
 
 docker compose build && docker compose up -d
 
-***Acess the api container and make all the migrations to the database***
+***Acess the web container and make all the migrations to the database***
 
-docker compose exec api sh
+docker compose exec web sh
 python manage.py makemigrations
 python manage.py migrate
 
-***Still on the api container, create a django superuser to do CRUD operations on the web interface***
+***Still on the web container, create a django superuser to do CRUD operations on the web interface***
 
 python manage.py createsuperuser
