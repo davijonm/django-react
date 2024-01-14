@@ -15,7 +15,7 @@ services:
     networks:
       - mynetwork
 
-  api:
+  web:
     build:
       context: .
       dockerfile: Dockerfile
